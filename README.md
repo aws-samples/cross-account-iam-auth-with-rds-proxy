@@ -126,7 +126,7 @@ cdk deploy DatabaseStack --profile database-account
 aws cloudformation --region <your-region> describe-stacks --stack-name DatabaseStack --profile database-account --query "Stacks[0].Outputs"
 ```
 
-For this demonstration, copy the CloudFormation output with the key: `ApplicationProxyEndpointOutputreadonly` and copy it into `cdk.json` for the parameter below:
+For this demonstration, copy the CloudFormation output with the key: `ApplicationProxyEndpointOutputreadwrite` and copy it into `cdk.json` for the parameter below:
 
 | Parameter Name                 | Description                                                                                                                            | Suggested Default |
 | ------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------- | ----------------- |

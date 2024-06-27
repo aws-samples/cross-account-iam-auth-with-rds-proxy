@@ -118,6 +118,10 @@ NagSuppressions.add_stack_suppressions(
             id="NIST.800.53.R5-LambdaDLQ",
             reason="Adding a DLQ for the connectiontest Lambda is not in scope for this project",
         ),
+        NagPackSuppression(
+            id="NIST.800.53.R5-VPCSubnetAutoAssignPublicIpDisabled",
+            reason="Not deploying EC2 instances in the public subnet",
+        ),
     ],
 )
 
